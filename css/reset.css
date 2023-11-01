@@ -30,3 +30,7 @@ ul {
   list-style: none;
   padding-inline-start: 20px;
 }
+
+h1, p {
+  color: var(--white);
+}
