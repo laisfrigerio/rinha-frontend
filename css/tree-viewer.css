@@ -1,0 +1,104 @@
+.tree-viewer ul {
+  list-style: none;
+  padding-inline-start: 20px;
+  position: relative;
+}
+
+.tree-viewer ul::after {
+  border-left: 1px dotted #4d4d4d;
+  content: "";
+  height: 100%;
+  left: 5px;
+  position: absolute;
+  top: 0;
+}
+
+.tree-viewer > ul::after {
+  border-left: none;
+  position: relative;
+}
+
+.tree-viewer li {
+  position: relative;
+}
+
+.tree-viewer li.object::after,
+.tree-viewer li.array::after {
+  color: #b6b6b6;
+  height: 0px;
+  margin-left: 2px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* .tree-viewer li.object::after {
+  content: "}";
+}
+
+.tree-viewer li.array::after {
+  content: "]";
+} */
+
+
+.object-property {
+  color: var(--white);
+  font-size: 13px;
+  position: relative;
+}
+
+.object-property::after {
+  content: ":";
+  position: absolute;
+  right: -8px;
+  top: -2px;
+}
+
+.object-value {
+  color: var(--light-blue);
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 20px;
+  position: relative;
+}
+
+.object-value.string {
+  color: var(--green);
+}
+
+.key-array,
+.key-object {
+  color: var(--white);
+  font-size: 13px;
+  position: relative;
+}
+
+.key-array::after,
+.key-object::after {
+  color: #b6b6b6;
+  position: absolute;
+  top: -3px;
+}
+
+.key-object::after {
+  content: "{";
+  right: -18px;
+}
+
+.key-array::after {
+  content: "[";
+  right: -20px;
+}
+
+.key-object::before,
+.key-array::before {
+  bottom: -2px;
+  content: ":";
+  position: absolute;
+  right: -7px;
+}
+
+.open-property,
+.close-property {
+  color: #b6b6b6;
+  position: relative;
+}

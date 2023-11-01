@@ -1,0 +1,64 @@
+main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  main,
+  form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  p {
+    font-size: 24px;
+  }
+  
+  .error-worker,
+  .error {
+    color: var(--red);
+    display: none;
+  }
+  
+  .error-worker.show,
+  .error.show {
+    display: block;
+  }
+  
+  .input-file,
+  .error {
+    margin-top: 20px;
+  }
+  
+  .input-file input {
+    display: none;
+  }
+  
+  .input-file label { 
+    background: var(--blue);
+    border: 1px solid var(--blue-border);
+    border-radius: 10px;
+    color: var(--white);
+    cursor: pointer;
+    display: block;
+    padding: 6px 12px 6px 12px;
+  }
+
+  .input-file label.disabled {
+    background: #E4E4E4;
+    border: none;
+    color: gray;
+    cursor: not-allowed;
+  }
+  
+  main.hidden {
+    display: none;
+  }

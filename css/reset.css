@@ -1,0 +1,32 @@
+:root {
+  --green: #12b300;
+  --black: #000;
+  --light-gray: #BFBFBF;
+  --dark-gray: gray;
+  --rose: #F2CAB8;
+  --red: #BF0E0E;
+  --blue: #698aff;
+  --blue-border: #435fc1;
+  --light-blue: #66ccff;
+  --white: #fff;
+  --background-color: #1a1a1a;
+}
+
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+}
+
+body {
+  background-color: var(--background-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 20px;
+}
